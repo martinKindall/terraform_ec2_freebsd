@@ -18,7 +18,7 @@ resource "aws_instance" "bsd_server" {
 
   user_data = <<EOF
 #!/bin/sh
-pkg install vim
+pkg install -y vim
 EOF
 
   tags = {
